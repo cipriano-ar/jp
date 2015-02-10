@@ -1,0 +1,399 @@
+@import url(fonts.css);
+@import url(front.css);
+@import url(back.css);
+
+/*
+* Stylesheet for a Movie Website (Jurassic Park)
+* @author Cipriano Mazzieri
+*/
+
+/*---------------- COLORS ----------------*/
+/*
+@ YELLOW: 				#FFF726; 255, 247, 38;
+@ RED: 					#FE0002; 254, 0, 2;
+@ WHITE:					#FEFEFE; 254, 254, 254;
+@ BLACK:					#222222; 34, 34, 34;
+@ GREEN (trailer): 	#115D1C; 17, 93, 28;
+@ ORANGE					#FFA500; 255,165,0;
+*/
+
+/*---------------- STRUCTURE ----------------*/
+
+.container {
+	max-width: 960px;
+}
+
+/*---------------- Secondary Nav Bar added on scroll ----------------*/
+
+.sec-nav-bar {
+	background: rgba(34,34,34,0.9);
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+
+.sec-nav-bar .img-container {
+	width: 200px;
+	margin: 0 auto;
+}
+
+/*---------------- HEADER ----------------*/
+
+header {
+	background-image: url(../images/header-bgd.jpg);
+	background-size: cover;
+	background-position: center center;
+	opacity: 1;
+	height: 130px;
+	border-radius: 0.5em;
+}
+
+header h1 {
+	color:#FE0002;
+	font-family: jurassic-park;
+	font-size: 5.8em;
+	letter-spacing: 0.2em;
+	line-height: 1.5;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	/* position, top and transform make the text vertical aligned */
+	position: relative;
+	top: 45%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+	transform:translateY(-50%);
+}
+
+/*---------------- NAV MENU ----------------*/
+
+nav {
+	font-family: jurassic-park;
+	background: rgba(255,165,0,0.3);
+	padding:4em 0;
+}
+
+.button {
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.flipper {
+	border-radius: 1em;
+	max-width: 450px;
+	height: 220px;
+	position: relative;
+}
+
+.front, .back {
+	width: 80%;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	left: 10%;
+}
+
+.front h1, .back h2, .back p {
+	text-align: center;
+}
+
+/*---------------- MAIN CONTENT ----------------*/
+
+main {
+	font-family: jurassic-park;
+}
+
+main p {
+	font-family: african;
+	font-size: 2em;
+	color:#FEFEFE;
+}
+
+section h2 {
+	color: #FFF726;
+	font-size: 9em;
+	letter-spacing: 0.1em;
+}
+
+/* +++++ Trailer +++++ */
+
+#trailer {
+	background: rgba(254, 254, 254,0.4);
+}
+
+#trailer video {
+	opacity: 0.9;
+	box-shadow: 0.2em 0.2em 0.2em 0.3em #115D1C,
+					0.2em -0.2em 0.2em 0.3em #115D1C,
+					-0.2em 0.2em 0.2em 0.3em #115D1C,
+					-0.2em -0.2em 0.2em 0.3em #115D1C;
+	border-radius: 1em;
+	-webkit-transition:opacity 0.2s;
+	transition:opacity 0.2s;
+	position: relative;
+}
+
+#trailer video:hover {
+	opacity: 1;
+}
+
+#trailer video:hover .play-btn {
+	opacity: 1;
+	z-index: 2;
+}
+
+/* +++++ Scenes +++++ */
+
+#scenes {
+	background: rgba(255,165,0,0.7);
+}
+
+section p {
+	color:#dff;
+	text-align: left;
+	margin-bottom: 0.8em;
+}
+
+section p:last-of-type {
+	margin-bottom: 3em;
+}
+
+#scenes ul,
+#dinosaurs ul {
+	list-style-type: none;
+	padding:0;
+}
+
+/* +++++ Locations +++++ */
+
+#locations {
+	background: rgba(254, 254, 254,0.4);
+}
+
+#locations iframe {
+	width: 100%;
+	height: 400px;
+}
+
+/* +++++ Dinosaurs +++++ */
+
+#dinosaurs {
+	background: rgba(255,165,0,0.7);
+}
+
+/*---------------- FOOTER ----------------*/
+
+footer {
+	font-family: jurassic-park;
+	background: rgba(34,34,34,0.9);
+	padding-top: 3em;
+	padding-bottom: 2em;
+	margin-bottom: 1em;
+}
+
+footer h2 {
+	color:#FE0002;
+	font-family: jurassic-park;
+	font-size: 7em;
+	letter-spacing: 0.1em;
+	padding: 0;
+	margin: 0 20px;
+}
+
+footer a {
+	padding: 0 2em;
+}
+
+footer a,
+footer a:active {
+	color:#FEFEFE;
+}
+
+footer a:hover {
+	color: #FFF726;
+}
+
+/*---------------- GENERAL ELEMENTS ----------------*/
+
+body {
+	font-size: 10px;
+	background: url(../images/jungle-bgd.jpg) fixed center;
+}
+
+img, video {
+	width: 100%;
+}
+
+section {
+	padding-top: 5em;
+	padding-bottom: 10em;
+}
+
+/*---------------- GENERAL CLASSES ----------------*/
+
+.video-thumb {
+	background: orange;
+	width: 250px;
+	height: 200px;
+	padding:0;
+	margin: 0 1em 3em;
+	display: inline-block;
+}
+
+.video-thumb .img-cont {
+	position: relative;
+}
+
+.video-thumb .img-cont:hover .play-btn {
+	opacity: 1;
+	z-index: 2;
+}
+
+.video-thumb h3 {
+	font-size: 3.2em;
+	word-spacing: 0.1em;
+	width: 100%;
+}
+
+.video-cont {
+	max-width: 930px;
+}
+
+.play-btn {
+	background: rgba(34,34,34,0.8);
+	opacity: 0;
+	border-radius: 0.4em;
+	width: 33.3%;
+	height: 33.3%;
+	position: absolute;
+	top:33.3%;
+	left:33.3%;
+	-web-kit-transition:opacity 0.4s ease-in-out;
+	transition:opacity 0.4s ease-in-out;
+	z-index: -1;
+}
+
+.social {
+	display: inline-block;
+}
+
+.vert-align-txt {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+	transform:translateY(-50%);
+}
+
+.txt-outline-yellow {
+	text-shadow: -1px -1px #FFF726,
+					 -1px 1px #FFF726,
+					  1px -1px #FFF726,
+					  1px 1px #FFF726;
+}
+
+.txt-outline-red {
+	text-shadow: -1px -1px #FE0002,
+					 -1px 1px #FE0002,
+					  1px -1px #FE0002,
+					  1px 1px #FE0002;
+}
+
+.txt-color-yellow {
+	color: #FFF726;
+}
+
+.txt-color-red {
+	color: #FE0002;
+}
+
+.txt-color-white {
+	color: #FEFEFE;
+}
+
+.txt-color-black {
+	color: #222222;
+}
+
+/*------------------------------------------------------------
+------------------------------------------------------------*/
+/*                    MEDIA QUERIES
+/*------------------------------------------------------------
+------------------------------------------------------------*/
+
+
+/*---------------- from 360px ----------------*/
+
+@media screen and (min-width: 360px) {
+
+	section h2 {
+		font-size: 10em;
+	}
+
+	footer h2 {
+		font-size: 8em;
+	}
+
+}
+
+/*---------------- from 480px ----------------*/
+
+@media screen and (min-width: 480px) {
+
+	header h1 {
+		font-size: 6.8em;
+		word-spacing: 1.5em;
+	}
+
+	section h2 {
+		font-size: 11.5em;
+	}
+
+}
+
+/*---------------- from 640px ----------------*/
+
+@media screen and (min-width: 640px) {
+
+	header h1 {
+		font-size: 7.5em;
+		word-spacing: 2.5em;
+	}
+
+	section h2 {
+		font-size: 12em;
+	}
+
+}
+
+/*---------------- from 768px ----------------*/
+
+@media screen and (min-width:768px) {
+
+	header {
+		height: 150px;
+	}
+
+	header h1 {
+		font-size: 8.5em;
+		word-spacing: 2.5em;
+	}
+
+	section h2 {
+		font-size: 18em;
+	}
+}
+
+/*---------------- from 900px ----------------*/
+
+@media screen and (min-width: 900px) {
+
+	header h1 {
+		font-size: 11.5em;
+		word-spacing: 1.5em;
+	}
+}

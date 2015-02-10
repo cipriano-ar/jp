@@ -1,0 +1,103 @@
+/*Back Stylesheet*/
+
+.back {
+	font-family: african;
+	color:#FEFEFE;
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform 0.5s linear 0s;
+}
+
+.back h2,
+.back p,
+.back button {
+	padding: 0;
+	margin: 0;
+}
+
+.back h2 {
+	/*font-size: 3em;*/
+	font-weight: 900;
+	letter-spacing: 0.2em;
+	background: rgba(34,34,34,0.4);
+	border-radius: 0.3em;
+	padding-top: 5%;
+	height: 33.3%;
+}
+.back p {
+	font-size: 1.5em;
+	font-weight: 700;
+	background: rgba(34,34,34,0.7);
+	border-radius: 0.3em;
+	padding-top: 5%;
+	height: 33.3%;
+}
+
+.back img {
+	border-radius: 0.9em;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.back .button-cont {
+	text-align: center;
+	height: 33.3%;
+	border: none;
+}
+
+.back button {
+	color: #FEFEFE;
+	font-size: 2.5em;
+	background: rgba(78, 120, 197,0.5);
+	border-radius: 50%;
+	border:1px solid #FEFEFE;
+	padding: 0.7em;
+	margin: 0 auto;
+	display: block;
+}
+
+.back button:hover {
+	background: rgba(254, 0, 2,0.5);
+	border-color: #FFF726;
+}
+
+.flipper > .back {
+	background: rgba(254,0,2,0.5);
+	/*opacity: 0.9;*/
+	border:1px solid #FFF726;
+	border-radius: 10px;
+	height: 220px;
+	transform: perspective(600px) rotateY(180deg);
+	position: absolute;
+	/*This makes the back side of the element hide during spin*/
+	backface-visibility: hidden;
+	/*Over half a second this will animate in a linear fashion*/
+	transition: transform 0.3s linear 0s;
+}
+
+/*This is for the hover event*/
+
+.flipper:hover > .back {
+	transform: perspective(600px) rotateY(0deg);
+}
+
+/*---------------- from 768px ----------------*/
+
+@media screen and (min-width:768px) {
+
+	.back h2 {
+		font-size: 2em;
+	}
+}
+
+/*---------------- from 900px ----------------*/
+
+@media screen and (min-width:900px) {
+
+	.back h2 {
+		font-size: 2.5em;
+	}
+}

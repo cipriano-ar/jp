@@ -1,0 +1,75 @@
+/*Front Stylesheet*/
+
+.front {
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	-webkit-backface-visibility: hidden;
+	transition: -webkit-transform 0.5s linear 0s;
+}
+
+.front h1 {
+	font-size: 4em;
+	letter-spacing: 0.4em;
+	/*background: rgba(238, 238, 238,0.5);*/
+}
+
+.front .vert-align-txt {
+	position: relative;
+	top: 40%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+	transform:translateY(-50%);
+}
+
+.flipper > .front { 
+	background: #115D1C; /*5C7A82;*/
+	opacity: 0.8;
+	border:1px solid #FEFEFE;
+	border-radius: 10px;
+	height: 220px;
+	transform: perspective(600px) rotateY(0deg);
+	position: absolute;
+	/*This makes the back side of the element hide during spin*/
+	backface-visibility: hidden;
+	/*Over half a second this will animate in a linear fashion*/
+	transition: transform 0.3s linear 0s;
+}
+
+/*This is for the hover event*/
+
+.flipper:hover > .front {
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+/*---------------- from 480px ----------------*/
+
+@media screen and (min-width:480px) {
+
+	.front h1 {
+		font-size: 5em;
+	}
+}
+
+/*---------------- from 768px ----------------*/
+
+@media screen and (min-width:768px) {
+
+	.front h1 {
+		font-size: 4.4em;
+	}
+}
+
+/*---------------- from 900px ----------------*/
+@media screen and (min-width: 900px) {
+
+	.front h1 {
+		font-size: 4.7em;
+	}
+}
+
+/*---------------- from 992px ----------------*/
+@media screen and (min-width: 992px) {
+
+	.front h1 {
+		font-size: 5.5em;
+	}
+}

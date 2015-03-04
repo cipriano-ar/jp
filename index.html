@@ -12,7 +12,14 @@
 	<link rel="stylesheet" href="frameworks/font-awesome/font-awesome-4.2.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="frameworks/bootstrap/bootstrap-3.3.1/css/bootstrap.min.css">
 
-	<!-- Magnific Popup core CSS file -->
+	<!-- FONTS -->
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<!-- NAV MENU FLIPPERS CSS -->
+	<link rel="stylesheet" href="css/front.css">
+	<link rel="stylesheet" href="css/back.css">
+
+	<!-- Magnific Popup CSS -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<!-- My CSS -->
@@ -31,7 +38,7 @@
 		<!-- Logo -->
 		<div class="img-container">
 			<a class="scroll" href="#top">
-				<img src="images/logo.jpg" alt="logo">	
+				<img src="media/images/logo.jpg" alt="logo">	
 			</a>
 		</div>
 	</nav>
@@ -62,7 +69,7 @@
 							<a class="scroll" href="#trailer"><button>Go</button></a>
 						</div>
 						<p>Click to watch.</p>
-						<img src="images/navigation/1-trailer.jpg" alt="">
+						<img src="media/images/navigation/1-trailer.jpg" alt="">
 					</div>
 					<div class="front">
 						<h1 class="vert-align-txt txt-color-black txt-outline-yellow">Trailer</h1>
@@ -79,7 +86,7 @@
 							<a class="scroll" href="#scenes"><button>Go</button></a>
 						</div>
 						<p>Click here to choose from a list of the best scenes.</p>
-						<img src="images/navigation/2-scenes.jpg" alt="">
+						<img src="media/images/navigation/2-scenes.jpg" alt="">
 					</div>
 					<div class="front">
 						<h1 class="vert-align-txt txt-color-red txt-outline-yellow">Scenes</h1>
@@ -96,7 +103,7 @@
 							<a class="scroll" href="#locations"><button>Go</button></a>
 						</div>
 						<p>Checkout all the stunning locations where the movie was filmed.</p>
-						<img src="images/navigation/3-locations-map.jpg" alt="locations map thumbnail">
+						<img src="media/images/navigation/3-locations-map.jpg" alt="locations map thumbnail">
 					</div>
 					<div class="front">
 						<h1 class="vert-align-txt txt-color-red txt-outline-yellow">Locations</h1>
@@ -113,7 +120,7 @@
 							<a class="scroll" href="#dinosaurs"><button>Go</button></a>
 						</div>
 						<p>Learn how the ‘Jurassic Park’ dinos were built and where they got their voices from.</p>
-						<img src="images/navigation/4-dinosaurs-trex.jpg" alt="">
+						<img src="media/images/navigation/4-dinosaurs-trex.jpg" alt="">
 					</div>
 					<div class="front">
 						<h1 class="vert-align-txt txt-color-black txt-outline-yellow">The Dinosaurs</h1>
@@ -131,8 +138,8 @@
 			<section id="trailer" class="col-xs-12 text-center">
 				<h2 class="txt-outline-red">Trailer</h2>
 				<video controls width="100%">
-					<source src="videos/jp-trailer.mp4" type="video/mp4">
-					<source src="videos/jp-trailer.webm" type="video/webm">
+					<source src="media/videos/jp-trailer.mp4" type="video/mp4">
+					<source src="media/videos/jp-trailer.webm" type="video/webm">
 					<div class="play-btn">
 						<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
 					</div>
@@ -144,10 +151,63 @@
 				<h2 class="txt-outline-red">Scenes</h2>
 				<p>Jurassic Park is one of the best page-to-screen adaptations ever. Spielberg’s thrill-ride shares its characters, setting and its most prominent dino-stars with the book</p>
 				<p>Here we show you five of our favorites scenes.</p>
-
-				<!-- Inserts an <ul> with the scene thumbnails -->
-				<?php include 'includes/scenes.inc.php'; ?>
-
+				<ul>
+					<li class="video-thumb">
+						<h3>Welcome to Jurassic Park</h3>
+						<div class="img-cont">
+							<img src="media/images/scenes/scene-1.jpg" alt=">Welcome to Jurassic Park">
+							<a href="media/videos/scenes/scene-1.mp4" class="popup-youtube">
+								<span class="play-btn">
+									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
+								</span>
+							</a>
+						</div>
+					</li>
+					<li class="video-thumb">
+						<h3>Chaos Theory</h3>
+						<div class="img-cont">
+							<img src="media/images/scenes/scene-2.jpg" alt="Chaos Theory">
+							<a href="media/videos/scenes/scene-2.mp4" class="popup-youtube">
+								<span class="play-btn">
+									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
+								</span>
+							</a>
+						</div>
+					</li>
+					<li class="video-thumb">
+						<h3>The Sick Triceratop</h3>
+						<div class="img-cont">
+							<img src="media/images/scenes/scene-3.jpg" alt="The Sick Triceratop">
+							<a href="media/videos/scenes/scene-3.mp4" class="popup-youtube">
+								<span class="play-btn">
+									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
+								</span>
+							</a>
+						</div>
+					</li>
+					<li class="video-thumb">
+						<h3>T-Rex Attack</h3>
+						<div class="img-cont">
+							<img src="media/images/scenes/scene-4.jpg" alt="T-Rex Attack">
+							<a href="media/videos/scenes/scene-4.mp4" class="popup-youtube">
+								<span class="play-btn">
+									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
+								</span>
+							</a>
+						</div>
+					</li>
+					<li class="video-thumb">
+						<h3>Nedry's Plan Goes Awry</h3>
+						<div class="img-cont">
+							<img src="media/images/scenes/scene-5.jpg" alt="Nedry's Plan Goes Awry">
+							<a href="media/videos/scenes/scene-5.mp4" class="popup-youtube">
+								<span class="play-btn">
+									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
+								</span>
+							</a>
+						</div>
+					</li>
+				</ul>
 			</section>
 
 			<!-- LOCATIONS -->
@@ -165,8 +225,8 @@
 					<li class="video-thumb">
 						<h3>Animatronic Dinosaurs - Part I</h3>
 						<div class="img-cont">
-							<img src="images/dino-making/pic-1.jpg"></img>
-							<a class="popup-youtube" href="videos/dinosaurs/part-1.mp4">
+							<img src="media/images/dino-making/pic-1.jpg"></img>
+							<a class="popup-youtube" href="media/videos/dinosaurs/part-1.mp4">
 								<div class="play-btn">
 									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
 								</div>
@@ -176,8 +236,8 @@
 					<li class="video-thumb">
 						<h3>Animatronic Dinosaurs - Part II</h3>
 						<div class="img-cont">
-							<img src="images/dino-making/pic-2.jpg"></img>
-							<a class="popup-youtube" href="videos/dinosaurs/part-2.mp4">
+							<img src="media/images/dino-making/pic-2.jpg"></img>
+							<a class="popup-youtube" href="media/videos/dinosaurs/part-2.mp4">
 								<div class="play-btn">
 									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
 								</div>
@@ -187,8 +247,8 @@
 					<li class="video-thumb">
 						<h3>Animatronic Dinosaurs - Part III</h3>
 						<div class="img-cont">
-							<img src="images/dino-making/pic-3.jpg"></img>
-							<a class="popup-youtube" href="videos/dinosaurs/part-3.mp4">
+							<img src="media/images/dino-making/pic-3.jpg"></img>
+							<a class="popup-youtube" href="media/videos/dinosaurs/part-3.mp4">
 								<div class="play-btn">
 									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
 								</div>
@@ -198,8 +258,8 @@
 					<li class="video-thumb">
 						<h3>Dinosaurs Voices</h3>
 						<div class="img-cont">
-							<img src="images/dino-making/pic-4.jpg"></img>
-							<a class="popup-youtube" href="videos/dinosaurs/sounds.mp4">
+							<img src="media/images/dino-making/pic-4.jpg"></img>
+							<a class="popup-youtube" href="media/videos/dinosaurs/sounds.mp4">
 								<div class="play-btn">
 									<i class="fa fa-play fa-3x vert-align-txt txt-color-white"></i>
 								</div>
@@ -211,7 +271,7 @@
 			
 		</main>
 
-		<!-- ########## FOOOTER ########## -->
+		<!-- ########## FOOTER ########## -->
 
 		<footer class="row">
 		<div class="col-xs-8 col-xs-offset-2 text-center">
@@ -235,48 +295,15 @@
 	</div> <!-- Container ends -->
 
 	
-		
+	<!-- JQUERY & BOOTSTRAP JS -->
 	<script src="frameworks/jquery/jquery-1.11.2.min.js"></script>
 	<script src="frameworks/bootstrap/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+
+	<!-- MAGNIFIC POPUP -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<!--<script src="js/custom.js"></script>-->
-	<script>
-
-	//var nav = responsiveNav('.nav-collapse');
-	$(function() {
-
-		// Scroll effect when clicking on an anchor link
-		$('.scroll').click(function(event){
-			var scroll_duration = 400;
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top}, scroll_duration);
-		});
-
-		// Secondary Nav Bar added on scroll
-		$(window).scroll(function(){
-			var scroll_breakpoint = 110;
-			var duration = 200;
-			if ( $(this).scrollTop() > scroll_breakpoint ) {
-				$('.sec-nav-bar').slideDown(duration);
-			} else {
-				$('.sec-nav-bar').slideUp(duration);
-			}
-		});
-
-		// Popup window with video
-		$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-			disableOn: 200,
-			type: 'iframe',
-			mainClass: 'mfp-fade',
-			removalDelay: 160,
-			preloader: true,
-			fixedContentPos: false
-		});
-
-	});
-	  	
-
-</script>
+	
+	<!-- CUSTOM JS -->
+	<script src="js/main.js"></script>
 
 </body>
 </html>

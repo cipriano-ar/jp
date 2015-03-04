@@ -2,15 +2,15 @@
 
 @font-face {
 	font-family: jurassic-park;
-	src:url(../fonts/1-jurassic-park-p-use.ttf);
+	src:url(fonts/1-jurassic-park-p-use.ttf);
 }
 
 @font-face {
 	font-family: african;
-	src:url(../fonts/2-african-c-use.ttf);
+	src:url(fonts/2-african-c-use.ttf);
 }
 
 @font-face {
 	font-family: tribeca;
-	src:url(../fonts/3-tribeca-regular-p-use.ttf);
+	src:url(fonts/3-tribeca-regular-p-use.ttf);
 }
